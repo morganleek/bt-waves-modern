@@ -2,3 +2,23 @@
 // 	.wp-block-navigation__container {
 // 	}
 // }
+
+.wp-block-navigation {
+	.wp-block-navigation__container {
+		& > .wp-block-navigation-item {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.has-child {
+			.wp-block-navigation__submenu-container {
+				left: 50% !important;
+				transform: translate(-50%, 0);
+				min-width: 150px !important;
+				.wp-block-navigation-item__content {
+					justify-content: center;
+
+				}
+			}
+		}
+	}
+}
