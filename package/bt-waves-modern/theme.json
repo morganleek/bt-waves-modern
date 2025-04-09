@@ -84,6 +84,11 @@
 					"slug": "primary-4"
 				},
 				{
+					"color": "#E2ECF3",
+					"name": "Primary-5",
+					"slug": "primary-5"
+				},
+				{
 					"color": "#54BCEB",
 					"name": "Secondary-1",
 					"slug": "secondary-1"
