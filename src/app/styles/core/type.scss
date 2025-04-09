@@ -1,3 +1,5 @@
+@use '../core/mixins';
+
 // h1, h2, h3, h4, h5, h6 {
 // }
 
@@ -25,5 +27,25 @@
 		&.has-small-font-size {
 			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 0.85) !important;
 		}	
+	}
+}
+
+.frm_style_formidable-style.with_frm_style {
+	--bg-color: transparent;
+	--field-height: 64px;
+	--field-pad: 16px;
+	--border-color: var(--wp--preset--color--grey-500);
+	--label-color: var(--wp--preset--color--text-1);
+	@include mixins.text-input;
+	@include mixins.button;
+}
+
+@include mixins.text-input;
+
+
+
+ul {
+	li {
+		line-height: 1em;
 	}
 }
