@@ -11,12 +11,30 @@
 		}
 		.has-child {
 			.wp-block-navigation__submenu-container {
-				left: 50% !important;
-				transform: translate(-50%, 0);
-				min-width: 150px !important;
+				left: -16px !important;
+				transform: none;
+				min-width: 180px !important;
+				border: 0 none;
+				background: var(--wp--preset--color--background);
+				padding: 6px;
+				border-radius: 5px;
+				// padding-bottom: 6px;
+				.wp-block-navigation-item {
+					@media( hover: hover ) {
+						&:hover {
+							.wp-block-navigation-item__content {
+								background: var(--wp--preset--color--primary-1);
+								color: #fff;
+							}
+						}
+					}
+				}
 				.wp-block-navigation-item__content {
-					justify-content: center;
-
+					justify-content: flex-start;
+					transition: all 0.2s;
+					border-radius: 3px;
+					padding-left: 10px;
+					padding-right: 10px;
 				}
 			}
 		}
