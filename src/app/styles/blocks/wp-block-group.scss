@@ -1,2 +1,9 @@
-// .wp-block-group {
-// }
+.wp-block-group {
+	&.sponsors-list {
+		gap: 4px 12px;
+		.wp-block-image img {
+			max-height: 50px;
+			width: auto !important;
+		}
+	}
+}
